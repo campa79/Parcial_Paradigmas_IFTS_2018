@@ -1,0 +1,28 @@
+{% extends "ingresado.html" %}
+
+{% block title %}Ver listado{% endblock %}
+
+{% block page_content %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Listado</title>
+</head>
+<body>
+
+<h1>RESULTADOS DE LA BUSQUEDA</h1>
+
+<ul>
+	{% for item in lista %}
+    <li>
+    	{{ item }}
+    </li>
+    {% endfor %}
+</ul>
+
+
+</body>
+</html>
+
+{% endblock %}
